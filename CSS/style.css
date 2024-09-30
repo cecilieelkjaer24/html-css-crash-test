@@ -1,5 +1,10 @@
 body, ul, li, h1, h2, a{
   
+  margin: 0%;
+  padding: 0%;
+  font-family: tahoma;
+
+}
   /* Insert a margin property and set it's value to 0 */
   /* Insert a padding property and set it's value to 0 */
   /* Insert a font-family property and set it's value to tahoma
@@ -7,7 +12,17 @@ body, ul, li, h1, h2, a{
 }
 p{
   /* Insert a font-size property and set it's value to 18px */
+
+  p {
+
+    font-size: 18px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
 }
+  
 header{
   background-color: #F63232;
   padding: 20px 0;
@@ -18,13 +33,19 @@ header{
   left: 0;
   z-index: 1;
 }
-header h1{
+header h1 {
+  color: white;
+  border: 8px solid white ;
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 36px;
+}
   /* Insert a color property and set it's value to white  */
   /* Insert a border property and set it's value to 8px solid white  */
   /* Insert a display property and set it's value to inline-block  */
   /* Insert a padding property and set it's value to 6px and 12px  */
   /* Insert a border-radius property and set it's value to 36px */
-}
+
 .banner{
   position: relative;
 }
@@ -41,8 +62,10 @@ header h1{
   top: 30%;
 } 
 .banner .welcome span{
+  font-size: 1.4em;
   /* Insert a font-size property and set it's value to 1.4em */
 }
+
 nav{
   background: #F4F4F4;
   padding: 20px;
@@ -68,6 +91,7 @@ nav li a{
 }
 nav li a:hover{
   /* Insert a text-decoration property and set it's value to underline */
+  text-decoration: underline;
 }
 nav li a.join{
   color: #F63232;
@@ -75,7 +99,7 @@ nav li a.join{
 main{
   max-width: 100%;
   width: 1200px;
-  margin: 80px auto;
+  margin: 40px auto;
   padding: 0 40px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -84,6 +108,7 @@ article h2{
   /* Insert a color property and set it's value to #F63232  */
   /* Insert a font-size property and set it's value to 48px */
   font-size: 48px;
+  color: #F63232;
 }
 article p{
   line-height: 2em;
@@ -95,14 +120,14 @@ article p::first-line{
 }
 .images{
   text-align: center;
-  margin: 80px 0;
+  margin: 800px 0;
   white-space: nowrap;
 }
 .images li{
   display: inline-block;
   list-style-type: none;
-  width: 40%;
-  margin: 20px 5%;
+  width: 40;
+  margin: 10px 5%;
   position: relative;
 }
 .images li:hover{
@@ -116,7 +141,7 @@ article p::first-line{
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .coverimage li {
   -webkit-box-flex: 1;
@@ -146,6 +171,12 @@ form input{
   /* Insert a font-size property and set it's value to 24px */
   /* Insert a border-radius property and set it's value to 28px */ 
   /* Insert a border property and set it's value to 4px solid and white */
+
+  margin: 20px 0;
+  padding: 10px 20px;
+  font-size: 24px;
+  border-radius: 28px;
+  border: 4px solid black white;
 }
 form textarea{
   margin: 20px 0;
@@ -157,6 +188,9 @@ form textarea{
 form input:focus{
   /* Insert a border property with following values: 4px dashed #4B4B4B */
   /* Insert a outline property with following values: none */
+
+  border: 4px dashed #4B4B4B;
+  outline: none;
 }
 form textarea:focus{
   border: 4px dashed #4B4B4B;
@@ -170,7 +204,11 @@ input[type="submit"] {
   /* Insert a background-color property with following value: red */
   /* Insert a font-size property with following value: xx-large */
   /* Insert a color property with following value: ghostwhite */
-    color: ghostwhite;
+
+  width: 39rem;
+  background-color: red;
+  font-size: xx-large;
+  color: ghostwhite;
 }
 input[type="submit"]:focus {
     border: 4px dashed ghostwhite;
@@ -179,7 +217,7 @@ input[type="submit"]:focus {
 footer{
   background: #F63232;
   color: white;
-  padding: 10px;
+  padding: 0px;
   text-align: center;
 }
 
